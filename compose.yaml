@@ -1,0 +1,57 @@
+services:
+    .:
+        build:
+            context: ./.
+        environment:
+            NODE_ENV: production
+        ports:
+            - 3000:3000
+    node-dependencies:
+        build:
+            context: ./node-dependencies
+        environment:
+            NODE_ENV: production
+        ports:
+            - 3001:3000
+    nodejs-debug:
+        build:
+            context: ./nodejs-debug
+        environment:
+            NODE_ENV: production
+        ports:
+            - 3002:3000
+    nodejs-files:
+        build:
+            context: ./nodejs-files
+        environment:
+            NODE_ENV: production
+        ports:
+            - 3003:3000
+    nodejs-http:
+        build:
+            context: ./nodejs-http
+        environment:
+            NODE_ENV: production
+        ports:
+            - 3004:3000
+    nodejs-intro:
+        build:
+            context: ./nodejs-intro
+        environment:
+            NODE_ENV: production
+        ports:
+            - 3005:3000
+    nodejs-intro-esm:
+        build:
+            context: ./nodejs-intro-esm
+        environment:
+            NODE_ENV: production
+        ports:
+            - 3006:3000
+    nodejs-route:
+        build:
+            context: ./nodejs-route
+        environment:
+            NODE_ENV: production
+        ports:
+            - 3007:3000
